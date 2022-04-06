@@ -1,8 +1,9 @@
 from tkinter import *
 from tkinter import filedialog as fd, filedialog
 from tkinter import messagebox as ms
+#Import asksaveasfilename and asksaveasfile module to open save name and file window 
 from tkinter.filedialog import asksaveasfilename, asksaveasfile
-
+#Import PIL
 from PIL import ImageTk, Image
 
 #  Build A Image Viewer Now
@@ -31,13 +32,7 @@ class Image_Viewer:
         Button(g, text='Save Image', bd=2, fg='white', bg='green', font=('', 15), command=self.save).pack(
             side=LEFT)
         g.pack()
-        # f = Frame(self.master, bg='white', padx=10, pady=10)
-        #
-        #
-        # Button(f, text='Open Image', bd=2, fg='white', bg='black', font=('', 15), command=self.make_image).pack(
-        #     side=LEFT)
-        #
-        # f.pack()
+       
 
     def save(self):
 
